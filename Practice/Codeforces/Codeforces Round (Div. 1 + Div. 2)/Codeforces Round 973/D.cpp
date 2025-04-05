@@ -3,6 +3,8 @@
 using int64 = long long;
 using A2 = std::array<int64, 2>;
 
+using P = std::pair<int, int>;
+
 #define Fast_IOS std::ios::sync_with_stdio(false), std::cin.tie(0), std::cout.tie(0)
 
 const int64 mod = 998244353;

@@ -21,6 +21,10 @@ public:
 };
 
 int main() {
+	std::vector<int> a;
+	a.push_back()
+	std::vector<int> b(a);
+	std::vector<std::vector<int>> a(n + 1);
 	Fast_IOS;
 	WORK work;
 	int T = 1;

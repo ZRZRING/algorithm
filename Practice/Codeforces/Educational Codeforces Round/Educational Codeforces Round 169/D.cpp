@@ -50,7 +50,7 @@ public:
 			int max = -1e9;
 			for (auto t : dict) {
 				if (t == s[i] || t == rev[s[i]]) continue;
-				if (vis.find(t) == vis.end()) continue;
+				// if (vis.find(t) == vis.end()) continue;
 				max = std::max(max, vis[t]);
 			}
 			last[i] = max;
@@ -61,7 +61,7 @@ public:
 			int min = 1e9;
 			for (auto t : dict) {
 				if (t == s[i] || t == rev[s[i]]) continue;
-				if (vis.find(t) == vis.end()) continue;
+				// if (vis.find(t) == vis.end()) continue;
 				min = std::min(min, vis[t]);
 			}
 			next[i] = min;

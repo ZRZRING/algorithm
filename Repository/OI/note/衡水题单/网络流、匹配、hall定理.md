@@ -1,0 +1,15 @@
+A 	CodeForces 1288F
+B 	CodeForces 708D
+C 	CodeForces 793G
+D 	CodeForces 786E
+E 	CodeForces 223E
+F 	CodeForces 611H
+G 	LibreOJ 2265
+H 	LibreOJ 2306
+I 	LibreOJ 2477
+J 	LibreOJ 2548
+K 	CodeForces 1307G
+L 	CodeForces 704D
+M 	CodeForces 739E
+N 	LibreOJ 2979
+O 	LibreOJ 2321

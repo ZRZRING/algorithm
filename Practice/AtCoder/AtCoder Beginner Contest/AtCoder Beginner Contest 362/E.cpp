@@ -35,10 +35,14 @@ public:
 				f[2][{j, a[j] - a[i]}] = 1;
 			}
 		}
+		// f[i][{j, k}] 表示长度为 i 的等差数列，末项为 a[j]，差值为 k 的方案数
 		for (int i = 3; i <= n; i++) {
 			for (int j = i - 1; j <= n - 1; j++) {
 				for (int k = j + 1; k <= n; k++) {
 					if (f[i - 1][{j, a[k] - a[j]}] == 0) {
+						// 因为后面需要统计 size
+						// 但这里一旦访问 f[i - 1][{j, a[k] - a[j]}]
+						// 就会开辟这个空间，会被计入 size，所以需要删除
 						f[i - 1].erase({j, a[k] - a[j]});
 					} else {
 						f[i][{k, a[k] - a[j]}] = 1;

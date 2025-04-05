@@ -1,0 +1,12 @@
+A 	CodeForces 986E
+B 	CodeForces 809E
+C 	CodeForces 639F
+D 	CodeForces 966E
+E 	CodeForces 613D
+F 	LibreOJ 2496
+G 	LibreOJ 3159
+H 	HYSBZ 4154
+I 	HDU 4347
+J 	HYSBZ 3489
+K 	CodeForces 453E
+L 	CodeForces 878C

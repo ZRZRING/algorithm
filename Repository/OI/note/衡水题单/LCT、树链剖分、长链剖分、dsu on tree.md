@@ -1,0 +1,12 @@
+A 	CodeForces 482E
+B 	CodeForces 1039E
+C 	CodeForces 1284F
+D 	CodeForces 600E
+E 	CodeForces 741D
+F 	CodeForces 570D
+G 	CodeForces 1254D
+H 	CodeForces 1009F
+I 	LibreOJ 3014
+J 	LibreOJ 3052
+K 	LibreOJ 3053
+L 	CodeForces 1172E

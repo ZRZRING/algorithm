@@ -11,7 +11,7 @@ void solve(){
     int n;
     cin>>n;
     vector<node> p(n+1);
-    std::vector<std::map<int, int>> cnt(3);
+    std::vector<std::map<int, std::set<int>>> cnt(3);
     vector a(3, std::map<int, set<int>>()) ;  //受该纬影响的点
     for(int i=1;i<=n;i++){
         int x,y,z;

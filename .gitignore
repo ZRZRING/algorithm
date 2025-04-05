@@ -1,14 +1,9 @@
-# 忽略所有文件
 *
 !*/
-
-# 排除 .cpp 文件
 !**/*.cpp
-
-# 排除 .md 文件
 !**/*.md
-
+!**/*.bat
+!**/*.py
+!**/*.go
 !/.vscode
-
-# 排除 .gitignore 文件本身
 !.gitignore

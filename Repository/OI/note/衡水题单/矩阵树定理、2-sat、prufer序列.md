@@ -1,0 +1,12 @@
+A 	CodeForces 917D
+B 	LibreOJ 6259
+C 	CodeForces 587D
+D 	LibreOJ 2155
+E 	LibreOJ 2305
+F 	LibreOJ 3101
+G 	LibreOJ 6036
+H 	LibreOJ 2320
+I 	51Nod 1601
+J 	HYSBZ 4766
+K 	HYSBZ 4945
+L 	CodeForces 1007D
