@@ -1,0 +1,33 @@
+{
+	"DSU Temple": {
+		"scope": "cpp",
+		"prefix": "DSU",
+		"body": [
+			"struct DSU {",
+			"\tint n;",
+			"",
+			"\tstd::vector<int> fa, size;",
+			"",
+			"\tDSU(int n) : n(n) {",
+			"\t\tfa.resize(n + 1);",
+			"\t\tsize.resize(n + 1);",
+			"\t\tstd::iota(fa.begin(), fa.end(), 0);",
+			"\t\tstd::fill(size.begin(), size.end(), 1);",
+			"\t}",
+			"",
+			"\tint find(int x) {",
+			"\t\treturn x == fa[x] ? x : fa[x] = find(fa[x]);",
+			"\t}",
+			"",
+			"\tint merge(int x, int y) {",
+			"\t\tx = find(x); y = find(y);",
+			"\t\tif (x == y) return 0;",
+			"\t\tfa[x] = y;",
+			"\t\tsize[y] += size[x];",
+			"\t\treturn 1;",
+			"\t}",
+			"};"
+		],
+		"description": "DSU Temple"
+	}
+}

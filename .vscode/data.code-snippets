@@ -1,0 +1,53 @@
+{
+	"DATA Temple": {
+		"scope": "cpp",
+		"prefix": "data",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"",
+			"using int64 = long long;",
+			"",
+			"#define endl '\\n'",
+			"#define lg(x) ((int)log10(x))",
+			"#define log(x) ((int)log2(x))",
+			"#define PII std::pair<int64, int64>",
+			"#define abs(x) ((x) < 0 ? -(x) : (x))",
+			"#define MOD(x) ((x) = ((x) % mod + mod) % mod)",
+			"#define Fast_IOS std::ios::sync_with_stdio(false), std::cin.tie(0)",
+			"#define debug(x) std::cerr << \"In Line \" << __LINE__ << \" the \" << #x << \" = \" << x << '\\n';",
+			"",
+			"const int64 mod = 998244353;",
+			"",
+			"std::random_device RD;",
+			"std::mt19937_64 gen(RD());",
+			"int64 roll(int64 l, int64 r) {",
+			"\tstd::uniform_int_distribution<int64> dist(l, r);",
+			"\treturn dist(gen);",
+			"}",
+			"",
+			"int main() {",
+			"\t$0",
+			"\treturn 0;",
+			"}",
+		],
+		"description": "RMQ Temple"
+	},
+	"Run": {
+        "scope": "bat",
+        "prefix": "run",
+        "body": [
+            "@echo off",
+            "cd %~dp0",
+            "echo Compiling...",
+            "g++ std.cpp -o std -w -O2",
+            "echo Compiled!",
+            "for /l %%a in (1,1,10) do (",
+            "\techo %%a",
+			"\tg++ data%%a.cpp -o data%%a",
+            "\tdata%%a.exe > %%a.in",
+            "\tstd.exe < %%a.in > %%a.out",
+            ")"
+        ],
+        "description": "run"
+    }
+}

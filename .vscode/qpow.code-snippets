@@ -1,0 +1,20 @@
+{
+	"qpow Temple": {
+		"scope": "cpp",
+		"prefix": "qpow",
+		"body": [
+			"int64 qpow(int64 a, int64 x = mod - 2) {",
+			"\ta %= mod;",
+			"\tx %= mod - 1;",
+			"\tint64 res = 1;",
+			"\twhile (x) {",
+			"\t\tif (x & 1) res = res * a % mod;",
+			"\t\ta = a * a % mod;",
+			"\t\tx >>= 1;",
+			"\t}",
+			"\treturn res;",
+			"}"
+		],
+		"description": "qpow Temple"
+	}
+}

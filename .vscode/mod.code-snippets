@@ -1,0 +1,29 @@
+{
+	"MOD": {
+		"scope": "cpp",
+		"prefix": "MOD",
+		"body": [
+			"template <class T>",
+			"T MOD(T& x, int64 p = mod) {",
+			"\treturn x = (x % p + p) % p;",
+			"}",
+			"template <class T>",
+			"T MOD(T&& x, int64 p = mod) {",
+			"\treturn x = (x % p + p) % p;",
+			"}",
+			"template <class T>",
+			"T QMOD(T& x, int64 p = mod) {",
+			"\twhile (x < 0) x += p;",
+			"\twhile (x >= p) x -= p;",
+			"\treturn x;",
+			"}",
+			"template <class T>",
+			"T QMOD(T&& x, int64 p = mod) {",
+			"\twhile (x < 0) x += p;",
+			"\twhile (x >= p) x -= p;",
+			"\treturn x;",
+			"}"
+		],
+		"description": "MOD"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"Prime": {
+		"scope": "cpp",
+		"prefix": "PRIME",
+		"body": [
+			"np.resize(N + 1);",
+			"for (int i = 2; i <= N; i++) {",
+			"\tif (!np[i]) {",
+			"\t\tprime.push_back(i);",
+			"\t}",
+			"\tfor (int j = 0; j < prime.size() && i * prime[j] <= N; j++) {",
+			"\t\tnp[i * prime[j]] = 1;",
+			"\t\tif (i % prime[j] == 0) break;",
+			"\t}",
+			"}"
+		],
+		"description": "Prime"
+	},
+}

@@ -1,0 +1,11 @@
+{
+	"in/out Temple": {
+		"scope": "cpp",
+		"prefix": "fileopt",
+		"body": [
+			"freopen(\"1.in\", \"r\", stdin);",
+			"freopen(\"1.out\", \"w\", stdout);"
+		],
+		"description": "RMQ Temple"
+	}
+}

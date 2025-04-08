@@ -1,9 +1,5 @@
-*
-!*/
-!**/*.cpp
-!**/*.md
-!**/*.bat
-!**/*.py
-!**/*.go
-!/.vscode
-!.gitignore
+*.exe
+*.bin
+**/.cph/
+Ignore/
+Temp/

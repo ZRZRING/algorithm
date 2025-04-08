@@ -1,9 +1,0 @@
-A 	CodeForces 1349D
-B 	CodeForces 618G
-C 	CodeForces 739E
-D 	CodeForces 1295F
-E 	HYSBZ 2655
-F 	LibreOJ 3111
-G 	CodeForces 1278F
-H 	CodeForces 960G
-I 	CodeForces 989E

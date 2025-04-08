@@ -37,21 +37,20 @@ void solve() {
         std::vector<std::vector<int>> f(3 * n, std::vector<int>(3 * n));
         std::vector<std::vector<PII>> pre(3 * n, std::vector<PII>(3 * n));
         for (int l = s - 1; l >= 0; l--) {
-            int r = 
-                if (val[l] == val[r]) {
-                    if (f[l + 1][r - 1] + 1 > f[l][r]) {
-                        f[l][r] = f[l + 1][r - 1] + 1;
-                        pre[l][r] = {1, -1};
-                    }
+            // int r = ;
+            if (val[l] == val[r]) {
+                if (f[l + 1][r - 1] + 1 > f[l][r]) {
+                    f[l][r] = f[l + 1][r - 1] + 1;
+                    pre[l][r] = {1, -1};
                 }
-                if (f[l + 1][r] > f[l][r]) {
-                    f[l][r] = f[l + 1][r];
-                    pre[l][r] = {1, 0};
-                }
-                if (f[l][r - 1] > f[l][r]) {
-                    f[l][r] = f[l][r - 1];
-                    pre[l][r] = {0, -1};
-                }
+            }
+            if (f[l + 1][r] > f[l][r]) {
+                f[l][r] = f[l + 1][r];
+                pre[l][r] = {1, 0};
+            }
+            if (f[l][r - 1] > f[l][r]) {
+                f[l][r] = f[l][r - 1];
+                pre[l][r] = {0, -1};
             }
         }
         int64 res = 2;

@@ -1,0 +1,29 @@
+{
+	"Toolkit": {
+		"scope": "cpp",
+		"prefix": "Toolkit",
+		"body": [
+			"template <class T>",
+			"T lg(T x) {",
+			"\treturn (T)log10(x);",
+			"}",
+			"template <class T>",
+			"T log(T x) {",
+			"\treturn (T)log2(x);",
+			"}",
+			"template <class T>",
+			"T abs(T x) {",
+			"\treturn x < 0 ? -x : x;",
+			"}",
+			"template <class T>",
+			"T mysqrt(T x) {",
+			"\treturn std::floor(sqrtl(x));",
+			"}",
+			"template <class T1, class T2>",
+			"T1 getbit(T1 x, T2 t) {",
+			"\treturn x >> t & 1ll;",
+			"}",
+		],
+		"description": "Toolkits for math or bit calculating"
+	}
+}
